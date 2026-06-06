@@ -1,0 +1,25 @@
+1,Paris,CDG,5,899.99
+2,New York,JFK,3,1133.84
+3,Barcelona,BCN,11,1581.24
+4,Dubai,DXB,14,1201.26
+5,Tokyo,NRT,10,1358.96
+6,Sydney,SYD,4,1251.05
+7,Rome,FCO,12,1110.53
+8,Cape Town,CPT,5,483.58
+9,Toronto,YYZ,5,850.95
+10,Istanbul,IST,11,1304.86
+11,Bangkok,BKK,3,768.11
+12,Los Angeles,LAX,8,410.29
+13,Berlin,BER,13,1253.06
+14,Lisbon,LIS,14,506.13
+15,Amsterdam,AMS,6,604.67
+16,Athens,ATH,13,1717.24
+17,Vienna,VIE,4,1678.62
+18,Cairo,CAI,11,578.5
+19,Rio de Janeiro,GIG,6,1384.09
+20,Marrakech,RAK,7,1067.89
+21,Seoul,ICN,3,745.14
+22,Buenos Aires,EZE,12,885.54
+23,Helsinki,HEL,9,492.5
+24,Dublin,DUB,5,635.72
+25,Reykjavik,KEF,3,743.66

@@ -1,0 +1,33 @@
+ Name: Robyn Ryan
+ Student Number: L00188388
+  
+  Program Summary:
+  The holiday manager program is designed to accept user input to firstly create Holiday objects and write them to a file.
+  The user can then choose from 5 options that manipulate the Holiday objects data file. These options are:
+  1. View all holidays - this displays all holiday objects to the console
+  2. View holidays in a price range - this allows the user to select a price range and then displays the holidays within that price range to the console
+  3. Display the cheapest holiday - the program sorts through all the holiday objects and displays the holiday with the lowest cost
+  4. Remove a holiday - this allows the user to select a holiday object by holiday number and the program removes the object from the file once the user exits the program.
+  5. Edit holiday details - the user can make changes to all holiday details except for the holiday number. Any changes are saved after the user exits the program.
+  6. Add Holiday - I created this function to satisfy the line of the assignment that which states to create Holiday objects and that they must be read in from the keyboard.
+  0. Exit - when the user selects this option the object data in memory is saved to the holiday dat. file and the program stops running.
+  
+  File Input/Output:
+  I  chose to handle file input/output using the serialization method. I downloaded the dat. file and the holiday class, imported the appropriate io package to the Holiday class and java file
+  and edited the Holiday class to implement the serializable interface. In the holiday manager java file, I created a method loadToFile() which opens an input stream to read binary objects
+  from the holidays.dat file. The FileInputStream reads bytes from the file and the ObjectInputStream deserializes the java objects from the bytes. Then the object is read in to the program 
+  and stored as an object in the packages arraylist. The saveToFile() method is responsible for re-serializing the objects in the packages arraylist to write them to the holidays.dat file.
+  
+  Peronal Reflection:
+  The most challenging part of the assignment was implementing the reading and writing of objects to and from the holidays.dat file. I ran into some issues trying to get the holiday class 
+  file and holidays.dat file to communicate. The error was an InvalidClassException error and from what I could tell, it meant the SerialVersionUID for the class used to write the objects was
+  incompatible with the one used to read it. Through some digging on the internet I found a solution: I had to manually set the same SerialVersionUID in the Holiday class that was used when
+  the dat. file was first created. The SerialVersionUID was listed as part of the error message and because it was a long number data type I also added 'L' to the end of the number.
+  Changing when the program saves the changes to file - instead of having the changes saved after the user chooses to exit the program, the changes could be saved immediately after each 
+  change is made. I could do this by adding in the saveToFile() function in options 4 and 5. The advantages to this would be having the dat. file up to date even if the program crashes or the 
+  user closes the program without selecting exit (0). If I had a very large dat. file then adding in the autosave feature might make the program sluggish. If a mistake is made there would 
+  also be no way to undo the change without manually running the program again and reverting the changes. With all this in mind, I would have liked to add a promt for the user on exit to 
+  choose if they want any changes saved and add in the autosave feature but it only saves to a back up dat. file instead of the original file.
+  
+  Elements Completed:
+  All menu elements were completed and include error checking and/or exception handling.
