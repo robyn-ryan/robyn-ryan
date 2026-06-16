@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @robyn-ryan
 - 👀 I’m interested in java and python dev
-- 🌱 I’m currently a student of computer science
+- 🌱 I’m a computer science graduate class of 2026
 - 💞️ I’m looking to collaborate on anything!
 
 <!---
